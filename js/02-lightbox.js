@@ -8,6 +8,8 @@ const galleryRef = document.querySelector(".gallery");
 const markup = createMarkup(galleryItems);
 
 galleryRef.innerHTML = markup;
+const lightbox = new SimpleLightbox('.gallery a', { captionData: 'alt', captionPosition: 'bottom', captionDelay: 250 });
+
 
 function createMarkup(items) {
   return items
@@ -31,7 +33,6 @@ galleryRef.addEventListener('click', (e) => {
         return;
     }
 
-    const lightbox = new SimpleLightbox('.gallery a', { captionData: 'alt', captionPosition: 'bottom', captionDelay: 250 });
 
 })
 
