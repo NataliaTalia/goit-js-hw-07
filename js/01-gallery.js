@@ -48,7 +48,7 @@ galleryRef.addEventListener("click", (e) => {
 
 instance.show();
 
- function onEscBtn() {
+ function onEscBtn(e) {
   if(e.code === "Escape") {
     instance.close();
 }
